@@ -1,0 +1,5 @@
+<button (click)="openDialog()">Open Dialog</button>
+
+<p *ngIf="message">{{ message }}</p>
+
+<app-dialog (confirmEvent)="onDialogConfirm()" #dialog></app-dialog>
